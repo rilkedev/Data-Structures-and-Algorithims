@@ -1,0 +1,152 @@
+Java:
+Variables: String, double, int, boolean
+Print command: System.out.println(""); 
+If/else structure:
+    if(x == 5) {
+      System.out.println("x is 5"); 
+    } else {
+      System.out.println("x is not 5"); 
+    }
+    
+Methods:
+
+public class Practice {
+
+    /*Example of method in java. Method is made outside main method and called within main method. All methods have:
+      - an access modifier
+      - a return type
+      -  a method name
+      - and parameters
+     */
+
+    public static void main(String[] args) {
+        //first function call of my_method
+        my_method();
+        int x = 5;
+        int y = 10;
+        int result = sum(x, y);
+        System.out.print(result);
+    }
+
+    //method that prints statement upon function call
+    static void my_method() {
+        System.out.println("I just got executed!");
+    }
+
+    //add method that has a return type of int
+    static int sum(int x, int y) {
+         int result = 0;
+         result = x + y;
+         return result;
+    }
+}
+
+ 
+continue... 
+
+
+
+
+
+
+
+
+
+
+
+
+Arrays:
+>> //declare an array of a particular length(5) 
+        int[] arr = new int[5];
+        
+        
+>> //Length of array can be found with arrayName.length
+    public static void main(String[] args) {
+        int arr[] = new int[5];
+        System.out.println(arr.length);
+    }
+        
+>>  //declares an array, populates, prints. 
+    public static void main(String[] args) {
+        //declare an array of a particular length(5)
+        int[] arr = new int[5];
+        arr[0] = 5;
+        arr[1] = 2;
+        arr[2] = 6;
+
+        for(int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+        }
+        //outputs 52600 because arr of any length populates with 0's specified
+    }
+    
+    
+>>  //declares array in a direct fashion, prints. 
+    public static void main(String[] args) {
+    
+        int[] arr = {2, 3, 4, 2, 1};
+
+        for(int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]); 
+        }
+    }
+    
+    
+>>  //declares array in a direct fashion, prints.
+    public static void main(String[] args) {
+        int[] arr = {2, 3, 4, 2, 1};
+
+        for(int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
+    }
+  
+  
+  
+>> //Array of strings printed as value of element alongside index 
+    public static void main(String[] args) {
+        String[] names = {"John", "Matthew", "Jordan", "Jacob"};
+        //create program that prints index with value
+        for(int k = 0; k < names.length; k++) {
+            System.out.print(names[k]);
+            System.out.println(" " + k);
+        }
+    }
+    /*
+    Outputs:
+    John 0
+    Matthew 1
+    Jordan 2
+    Jacob 3
+     */
+  
+  
+>> //Create an array of Strings where if Jordan is within the array as an element, print "Found Jordan". If Jordan wasn't found, print
+    //"couldn't find jordan
+    public static void main(String[] args) {
+        String[] names = {"John", "Matthew", "Jordan", "Jacob"};
+        boolean found = false;
+        for(int k = 0; k < names.length; k++) {
+            if(names[k].toLowerCase().equals("jordan")) {
+                System.out.println("Found Jordan");
+                found = true;
+            }
+        }
+        if(!found) {
+            System.out.println("Couldn't find Jordan");
+        }
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
